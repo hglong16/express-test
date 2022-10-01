@@ -8,6 +8,7 @@ router.get('/:userId', (req, res) => res.send(req.context.models.users[req.param
 
 router.post('/', (req, res) => {
   res.sendStatus(200);
+  console.log('req.params.body', req.params.body);
 });
 
 export default router;
