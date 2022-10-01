@@ -16,7 +16,7 @@ app.use((req, res, next) => {
   };
   next();
 });
-
+app.use('/', routes.root)
 app.use('/session', routes.session);
 app.use('/users', routes.user);
 app.use('/messages', routes.message);
